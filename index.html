@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сварочная мастерская - Мангалы и металлоконструкции</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <svg class="logo-icon" viewBox="0 0 24 24">
+                        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+                    </svg>
+                    <h1>Сварочная мастерская Алматы</h1>
+                </div>
+                <button class="mobile-menu-btn" aria-label="Открыть меню">☰</button>
+                <ul>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#gallery">Галерея</a></li>
+                    <li><a href="#order">Заказать</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="container">
+                <h2>Изготовим мангал по вашему эскизу!</h2>
+                <p>Качественные сварочные работы любой сложности:</p>
+                <ul>
+                    <li>Мангалы</li>
+                    <li>Коптильни</li>
+                    <li>Навесы</li>
+                    <li>Ворота</li>
+                    <li>Заборы</li>
+                </ul>
+                <a href="#order" class="cta-button">Заказать</a>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="container">
+                <h2>Наши услуги</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>Мангалы</h3>
+                        <p>Изготовление мангалов любой сложности по вашим эскизам</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Коптильни</h3>
+                        <p>Профессиональные коптильни для дома и бизнеса</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Навесы</h3>
+                        <p>Надежные металлические навесы любых размеров</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Ворота и заборы</h3>
+                        <p>Изготовление и установка ворот и заборов</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery">
+            <div class="container">
+                <h2>Наши работы</h2>
+                <div id="gallery-grid" class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="images/1.jpg" alt="Мангал">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/2.jpg" alt="Мангал">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/3.jpg" alt="Мангал">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/4.jpg" alt="Мангал">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/5.jpg" alt="Мангал">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/6.jpg" alt="Мангал">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/7.jpg" alt="Мангал">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/8.jpg" alt="Мангал">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/9.jpg" alt="Мангал">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/10.jpg" alt="Мангал">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="order" class="order">
+            <div class="container">
+                <h2>Оформить заказ</h2>
+                	<form id="order-form" action="https://formspree.io/f/mvggkjzr" method="POST">
+    <div class="form-group">
+        <label for="name">Ваше имя</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+        <label for="phone">Телефон</label>
+        <input type="tel" id="phone" name="phone" required>
+    </div>
+    <div class="form-group">
+        <label for="product">Тип изделия</label>
+        <select id="product" name="product" required>
+            <option value="">Выберите тип изделия</option>
+            <option value="mangal">Мангал</option>
+            <option value="koptilnya">Коптильня</option>
+            <option value="naves">Навес</option>
+            <option value="vorota">Ворота</option>
+            <option value="zabor">Забор</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="description">Описание заказа</label>
+        <textarea id="description" name="description" rows="4"></textarea>
+    </div>
+    <button type="submit" class="submit-button">Отправить заявку</button>
+</form>
+            </div>
+        </section>
+
+        <section id="contacts" class="contacts">
+            <div class="container">
+                <h2>Контакты</h2>
+                <div class="contact-info">
+                    <p>Телефон: <a href="tel:+77087288441">+7(708)7288441</a></p>
+                    <!-- <p>Email: <a href="mailto:info@svarka.ru">info@svarka.ru</a></p> -->
+                    <!-- <p>Адрес: </p> -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Сварочная мастерская. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+</body>
+</html>
